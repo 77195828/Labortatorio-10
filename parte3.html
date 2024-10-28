@@ -9,9 +9,10 @@
     <script>
       let esMayorDeEdad=true;
       let tieneLicencia=false;
-
-     document.write("\n Puede Conducir: ", esMayorDeEdad&&tieneLicencia); 
-     document.write("\n Puede Conducir: ", esMayorDeEdad||tieneLicencia); 
+      let puedeConducir=esMayorDeEdad&&tieneLicencia;
+     console.log("\n Puede Conducir? ", puedeConducir); 
+     let errorconducir=esMayorDeEdad||tieneLicencia;
+     console.log("\n Puede Conducir con errores? ", errorconducir); 
     </script>
 </body>
 </html>
